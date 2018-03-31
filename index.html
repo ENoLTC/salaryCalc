@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <title>ZPCalc</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="insert row valign-wrapper">
+      <form class="col s12">
+        <div class="row center-align">
+          <div class="input-field col s12">
+            <input id="salary" type="text">
+            <label for="salary">Оклад, руб.</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="overtime" type="text">
+            <label for="overtime">Сверхурочно, ч.</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="daytime" type="text">
+            <label for="daytime">Дневных смен, шт.</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="nighttime" type="text">
+            <label for="nighttime">Ночных смен, шт.</label>
+          </div>
+        </div>
+        <p class="center-align calc">
+          <button class="btn waves-effect waves-light" type="submit" id="calc">Посчитать</button>
+        </p>
+      </form>
+    </div>
+
+    <div class="row load">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row result">
+      <div class="row card blue-grey darken-1">
+        <div class="row white-text">
+          <div class="col s10 offset-s1 paym">
+            <p class="left-align paymParag">Оклад: <span id="okl"></span> <span class="code">005</span></p>
+            <p class="left-align paymParag">Сверхурочно: <span id="sverh"></span> <span class="code">046</span></p>
+            <p class="left-align paymParag">Надбавка за ночные смены: <span id="noch"></span> <span class="code">068</span></p>
+            <p class="left-align paymParag">Надбавка за вредность: <span id="vred"></span> <span class="code">020</span></p>
+            <p class="left-align paymParag">Молоко: <span id="moloko"></span> <span class="code">014</span></p>
+            <p class="left-align paymParag">Выслуга лет: <span id="visl"></span> <span class="code">113</span></p>
+          </div>
+        </div>
+        <div class="row white-text total">
+          <div class="row itog">
+            <p class="text-white center-align">Итого: <span id="tot" class="left-align"></span></p>
+          </div>
+          <div class="row ndfl">
+            <p class="text-white center-align ndfl">НДФЛ 13%: <span id="ndfl"></span></p>
+          </div>
+          <div class="row pay">
+            <p class="card-title center-align pay">К выплате: <span id="pay"></span></p>
+          </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

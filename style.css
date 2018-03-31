@@ -1,0 +1,56 @@
+.insert, .result {
+  margin: 40px 0;
+}
+
+.calc {
+  margin-bottom: 20px;
+}
+
+.paym, .total {
+  margin: 15px 0 0 0;
+  padding: 0;
+  border-radius: 0 0 2px 2px;
+}
+
+.total {
+  margin-bottom: 15px;
+}
+
+.load {
+  display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.paymParag {
+  margin: 5px;
+}
+
+.result {
+  display: none;
+}
+
+.err {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.card {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+.ndfl, .pay, .itog {
+  margin: 5px 0;
+}
+
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.code {
+  float: right;
+  color: #c5cbce;
+}
