@@ -1,5 +1,7 @@
-# salary-calc
-# salaryCalc
-# salaryCalc
-# salaryCalc
-# salaryCalc
+# Калькулятор зарплаты
+## Приложение для рассчета зарплаты
+В проекте используется:
+1. Materialize CSS
+2. Vanilla JS
+
+Работа с DOM

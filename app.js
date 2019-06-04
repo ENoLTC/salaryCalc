@@ -7,30 +7,30 @@ document.getElementById('calc').addEventListener('click', function(e) {
 });
 
 function calc() {
-  const salary = Number(document.getElementById('salary').value);
-  const overtime = Number(document.getElementById('overtime').value);
-  const daytime = Number(document.getElementById('daytime').value);
-  const nighttime = Number(document.getElementById('nighttime').value);
+  const salary = Number(document.getElementById('salary').value),
+        overtime = Number(document.getElementById('overtime').value),
+        daytime = Number(document.getElementById('daytime').value),
+        nighttime = Number(document.getElementById('nighttime').value);
 
-  const hours = ((daytime + nighttime) * 11.5 - overtime);
-  const overtimePrice = (salary / hours) * overtime * 2;
-  const nighttimeBonus = (salary / hours) * 8 * 0.4;
-  const harm = salary * 0.04;
-  const milk = (daytime + nighttime) * 28;
-  const los = 1500;
-  const summary = salary + overtimePrice + nighttimeBonus + harm + milk + los;
-  const ndflVal = summary * 0.13;
-  const payVal = summary - ndflVal;
+  const hours = ((daytime + nighttime) * 11.5 - overtime),
+        overtimePrice = (salary / hours) * overtime * 2,
+        nighttimeBonus = (salary / hours) * 8 * 0.4,
+        harm = salary * 0.04,
+        milk = (daytime + nighttime) * 28,
+        los = 1500,
+        summary = salary + overtimePrice + nighttimeBonus + harm + milk + los,
+        ndflVal = summary * 0.13,
+        payVal = summary - ndflVal;
 
-  const oklad = document.getElementById('okl');
-  const sverh = document.getElementById('sverh');
-  const noch = document.getElementById('noch');
-  const vred = document.getElementById('vred');
-  const moloko = document.getElementById('moloko');
-  const visl = document.getElementById('visl');
-  const tot = document.getElementById('tot');
-  const ndfl = document.getElementById('ndfl');
-  const pay = document.getElementById('pay');
+  const oklad = document.getElementById('okl'),
+        sverh = document.getElementById('sverh'),
+        noch = document.getElementById('noch'),
+        vred = document.getElementById('vred'),
+        moloko = document.getElementById('moloko'),
+        visl = document.getElementById('visl'),
+        tot = document.getElementById('tot'),
+        ndfl = document.getElementById('ndfl'),
+        pay = document.getElementById('pay');
 
   oklad.innerText = `${salary.toFixed(2)} руб.`;
   sverh.innerText = `${overtimePrice.toFixed(2)} руб.`;
